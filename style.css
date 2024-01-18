@@ -15,8 +15,8 @@ html{
     background-color: #0284C7;
 }
 body{
-    background-color: white;
     width: 70%;
+    background-color: white;
     height: 100vh;
     margin: 0;
     min-height: 100dvh;
@@ -166,9 +166,94 @@ a{
 }
 
 .education{
+    text-align: center;
     background-color: #0099ff;
+}
+.education img{
+margin: 0 auto;
+}
+.education h2{
+    font-size: 2rem;
+    color: white;
+}
+.education h3{
+    font-size: 1.5rem;
+    color: white;
 }
 .education h2, h3, img{
     margin: 0;
     padding: 0;
+}
+.timeline-section{
+    background-color: #0099ff;
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+.timeline-items{
+    max-width: 900px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-item::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    left: calc(50% - 1px);
+    border-radius: 20px;
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    
+    text-align: left;
+    padding-right: calc(50% + 30px);
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: #324154;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.timeline-date{
+    font-size: 18px;
+    color: #324154;
+}
+.timeline-content{
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.textcoder img{
+    width: 8%;
+    height: auto;
+    margin-right: 8px;
+    margin-bottom: 20px;
+}
+
+.textcoder{
+    display: flex;
+}
+
+.Certificado{
+    margin: 20px 0;
+    padding: 10px 0;
 }
